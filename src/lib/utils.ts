@@ -1,10 +1,10 @@
-import { ClassValue, clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
-import { Expense, ExpensesTable } from "@/types/index.d";
-import { XPNS_PER_PAGE } from "./consts";
+import { ClassValue, clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
+import { Expense, ExpensesTable } from '@/types/index.d'
+import { XPNS_PER_PAGE } from './consts'
 
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
+export function cn (...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
 }
 
 export const sortByDate = (a: Expense, b: Expense) => {
@@ -28,7 +28,7 @@ export const lengthOfRange = (data: Expense[], page: number = 1) => {
   }
 
   if (page >= totalPages - 2) {
-    return [1, 2, '...', totalPages - 2, totalPages - 1, totalPages];
+    return [1, 2, '...', totalPages - 2, totalPages - 1, totalPages]
   }
 
   return [
@@ -38,6 +38,6 @@ export const lengthOfRange = (data: Expense[], page: number = 1) => {
     page,
     page + 1,
     '...',
-    totalPages,
-  ];
+    totalPages
+  ]
 }
