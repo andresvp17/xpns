@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "spentName": "burgers",
+            "spent": 12,
+            "date": "2024-03-11",
+            "time": "16:27"
+        },
+        {
+            "spentName": "bread",
+            "spent": 8,
+            "date": "2024-03-15",
+            "time": "18:34"
+        },
+        {
+            "spentName": "car expenses",
+            "spent": 70,
+            "date": "2024-03-12",
+            "time": "16:32"
+        },
+        {
+            "spentName": "cleaning the house",
+            "spent": 30,
+            "date": "2024-03-13",
+            "time": "15:32"
+        }
+    ]
+}

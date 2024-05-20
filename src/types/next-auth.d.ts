@@ -1,0 +1,16 @@
+import NextAuth, { DefaultSession } from "next-auth"
+
+declare module "next-auth" {
+    interface User {
+        username: string
+        userID: number
+    }
+    interface Session {
+        user: User & {
+            username: string
+        }
+        token: {
+            username: string
+        }
+    }
+  }
